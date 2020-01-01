@@ -6,6 +6,8 @@ function! LoveLetter(...)
     let heart = a:1
   endif
 
+  execute ":normal gg"
+
   let all_line = getline(0, line("$"))
   for line in all_line
     " Ignore blank lines.
